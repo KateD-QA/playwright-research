@@ -22,13 +22,13 @@ test('Create a new pet record with valid data using POST addPet API', async () =
 });
 
   test('Retrive an existing Pet record using GET getPetById API', async () => {
-  const getPetResponse = await fetch(`${baseUrl}/pet/14`, {
+  const getPetResponse = await fetch(`${baseUrl}/pet/1`, {
     method: 'GET',
   });
   // Check the response message returns same data sent in request
   const retrievedPet = await getPetResponse.json();
   expect(getPetResponse.status).toBe(200);
-  expect(retrievedPet.name).toBe('Sherlock');
+  expect(retrievedPet.name).toBe('doggie');
   expect(retrievedPet.status).toBe('available');
 });
 
@@ -49,7 +49,7 @@ test('Update a valid existing Pet using PUT updatePet API', async () => {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      id: 1,
+      id: 88,
       name: 'Pebbles Junior',
       status: 'unavailable',
     }),
@@ -83,3 +83,5 @@ test('Delete an invalid Pet with DELETE deletePet API', async () => {
     });
     expect(deletePetResponse.status).toBe(404);
   });
+
+  
