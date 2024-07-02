@@ -16,9 +16,9 @@
 
 
 # How to Run Tests
-To run the API tests in the kate-demo-automation project, use this command: npx playwright test tests/kate-demo-automation/petstore-api-tests --project webkit 
-To run the UI tests in the kate-demo-automation project, use this command: npx playwright test tests/kate-demo-automation/sauce-ui-tests
-To open last HTML report run for either test folder: npx playwright show-report
+* To run the API tests in the kate-demo-automation project, use this command: npx playwright test tests/kate-demo-automation/petstore-api-tests --project webkit 
+* To run the UI tests in the kate-demo-automation project, use this command: npx playwright test tests/kate-demo-automation/sauce-ui-tests
+* To open last HTML report run for either test folder: npx playwright show-report
 
 
 # Additional Notes
