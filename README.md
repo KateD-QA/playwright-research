@@ -7,12 +7,11 @@
 * Currnetly, the tests are configured to run only on Chromium for the sake of a quick demo. In a real life scenario, they should be run in cross-browser test mode. 
 
 # How to Run Tests
-* To access the tests in this Repo, navigate to main > playwright-research/tests/kate-demo-automation
-* To run the UI tests for the Banking App Project, use this command: npx playwright test tests/banking-app-ui-tests 
-
-* To run the API tests in the kate-demo-automation project, use this command: npx playwright test tests/kate-demo-automation/petstore-api-tests --project webkit 
+* To access the tests in this Repo, navigate to main > playwright-research/tests
+* To run the UI tests for the Banking App Project, use this command: npx playwright test tests/banking-app-ui-tests
 * To run all tests and watch UI in action, use this command: npx playwright test --ui
 * To open last HTML report run and view test case results: npx playwright show-report
+* To run the API tests in the kate-demo-automation project, use this command: npx playwright test tests/kate-demo-automation/petstore-api-tests --project webkit 
 
 # Additonal Information about UI tests
 * The reason for not checking the Account detials for every customer listed in the Customer login drop down is because in reality, the same API calls would be used regardless of the customer Ids passed in, so for resource and efficiency sake, we can just check the fucntionality using one test customer account. 
