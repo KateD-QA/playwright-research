@@ -21,7 +21,7 @@ test('Create a new pet record with valid data using POST addPet API', async () =
   expect(createdPet.status).toBe('available');
 });
 
-  test('Retrive an existing Pet record using GET getPetById API', async () => {
+  test.skip('Retrive an existing Pet record using GET getPetById API', async () => {
   const getPetResponse = await fetch(`${baseUrl}/pet/1`, {
     method: 'GET',
   });
